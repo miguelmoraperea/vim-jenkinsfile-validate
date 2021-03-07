@@ -27,3 +27,13 @@ nmap [your_mapping] <Plug>VimJenkinsfileValidate<CR>
 ## Usage
 
 Just call *VimJenkinfileValidate* from a Jenkinsfile.
+
+## Status
+
+- [x] Add basic Jenkinsfile validation.
+- [ ] Add support for Jenkins controllers which have CRSF protection enabled.
+
+## Contributions
+
+If you find this plugin useful and would like to make improvements, please by all means,
+contributions are greatly appreciated!.
