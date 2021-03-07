@@ -23,8 +23,8 @@ M.validate = function(file_name)
         return
     end
 
-    local command = '!curl -X POST -F "jenkinsfile=<'..file_name..'" '..vim.g.jenkins_url..'/pipeline-model-converter/validate'
-    print(vim.api.nvim_exec(command, true))
+    local command = 'new | read ! curl -X POST -F "jenkinsfile=<'..file_name..'" '..vim.g.jenkins_url..'/pipeline-model-converter/validate'
+    vim.api.nvim_exec(command, false)
 end
 
 return M
